@@ -1,36 +1,28 @@
 #include "main.h"
-#include <stdio.h>
-
-
 /**
-* ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 letters after it in the alphabet.
-* ROT13 is an example of the Caesar cipher.
-* This function takes a string and returns the string ciphered with Rot13. 
-If there are numbers or special characters included in the string, they are returned as they are. 
-* Only letters from the latin/english alphabet are shifted, like in the original Rot13 "implementation".
-*/
+ * rot13 - encodes a string using rot13
+ * @s: input string.
+ * Return: the pointer to dest.
+ */
 
-int rot13(int c){
-  if('a' <= c && c <= 'z'){
-    return rot13b(c,'a');
-  } else if ('A' <= c && c <= 'Z') {
-    return rot13b(c, 'A');
-  } else {
-    return c;
-  }
-}
+char *rot13(char *s)
+{
+	int count = 0, i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-int rot13b(int c, int basis){
-  c = (((c-basis)+13)%26)+basis;
-  return c;
-}
+	while (*(s + count) != '\0')
+	{
+		for (i = 0; i < 52; i++)
+		{
+			if (*(s + count) == alphabet[i])
+			{
+				*(s + count) = rot13[i];
+				break;
+			}
+		}
+		count++;
+	}
 
-int main() {
-  printf("The given args will be rotated");
-  int c;
-  while((c = getchar()) != EOF){
-    c = rot13(c);
-    putchar(c);
-  }
-  return 0;
+	return (s);
 }
