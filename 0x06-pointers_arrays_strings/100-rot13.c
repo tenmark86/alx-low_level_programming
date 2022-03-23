@@ -10,31 +10,27 @@ If there are numbers or special characters included in the string, they are retu
 * Only letters from the latin/english alphabet are shifted, like in the original Rot13 "implementation".
 */
 
-char *rot13(const char *src)
-{
-    if(src == NULL){
-      return NULL;
-    }
-  
-    char* result = malloc(strlen(src));
-    
-    if(result != NULL){
-      strcpy(result, src);
-      char* current_char = result;
-      
-      while(*current_char != '\0'){
-        //Only increment alphabet characters
-        if((*current_char >= 97 && *current_char <= 122) || (*current_char >= 65 && *current_char <= 90)){
-          if(*current_char > 109 || (*current_char > 77 && *current_char < 91)){
-            //Characters that wrap around to the start of the alphabet
-            *current_char -= 13;
-          }else{
-            //Characters that can be safely incremented
-            *current_char += 13;
-          }
-        }
-        current_char++;
-      }
-    }
-    return result;
+int rot13(int c){
+  if('a' <= c && c <= 'z'){
+    return rot13b(c,'a');
+  } else if ('A' <= c && c <= 'Z') {
+    return rot13b(c, 'A');
+  } else {
+    return c;
+  }
+}
+
+int rot13b(int c, int basis){
+  c = (((c-basis)+13)%26)+basis;
+  return c;
+}
+
+int main() {
+  printf("The given args will be rotated");
+  int c;
+  while((c = getchar()) != EOF){
+    c = rot13(c);
+    putchar(c);
+  }
+  return 0;
 }
