@@ -33,3 +33,12 @@ Project done during Full Stack Software Engineering studies at Holberton School.
 * All your scripts should be exactly two lines long (```$ wc -l file``` should print 2)
 * All your files should end with a new line
 * The first line of all your files should be exactly ```#!/bin/bash```
+
+| File name | Description |
+| ------------ | ----------- |
+0-preprocessor   Runs a C file through the preprocessor and saves the result into another file
+1-compiler       Compiles a C file but does not link
+
+
+
+
