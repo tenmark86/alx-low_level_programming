@@ -21,3 +21,4 @@ All of the following folders are projects done during the studies
 | [`0x05-pointers_arrays_strings`](https://github.com/tenmark86/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings) | It aims to learn about pointers and arrays in C language. |
 | [`0x06-pointers_arrays_strings`](https://github.com/tenmark86/alx-low_level_programming/tree/master/0x06-pointers_arrays_strings) | It aims to learn about pointers and arrays in C language. |
 | [`0x07-pointers_arrays_strings`](https://github.com/tenmark86/alx-low_level_programming/tree/master/0x07-pointers_arrays_strings) |It aims to learn about pointers and arrays in C language.  |
+| [`0x08-recursion`](https://github.com/tenmark86/alx-low_level_programming/tree/master/0x08-recursion) | It aims to learn about recursion and how to implement it in C language. |
