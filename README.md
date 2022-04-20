@@ -29,6 +29,6 @@ All of the following folders are projects done during the studies
 |[`0x0D-preprocessor`](https://github.com/tenmark86/alx-low_level_programming/tree/master/0x0D-preprocessor)  | It aims to learn about how to include guard in the header files and macros in C language. |
 |[`0x0E-structures_typedef`](https://github.com/tenmark86/alx-low_level_programming/tree/master/0x0E-structures_typedef)  | It aims to learn about structures and typedef in C language. |
 | [`0x0F-function_pointers`](https://github.com/tenmark86/alx-low_level_programming/tree/master/0x0F-function_pointers) | It aims to learn about function pointers in C language. |
-
+| [`0x10-variadic_functions`](https://github.com/tenmark86/alx-low_level_programming/tree/master/0x10-variadic_functions) | It aims to learn about variadic functions in C language. |
 
 
