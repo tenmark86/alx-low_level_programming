@@ -1,6 +1,8 @@
 # Low-level programming & Algorithm
 Module of Low-level programming and algorithm, carried out during Full Stack Software Engineering studies at ```ALX SE``` and ```Holberton School```.
 
+![C](https://res.cloudinary.com/practicaldev/image/fetch/s--dWwH4rJ4--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://media2.giphy.com/media/fnD9cHHIrYRYk/giphy.gif)
+
 # Technologies
 * Scripts written in Bash 4.3.11(1)
 * C files are compiled using gcc 4.8.4
